@@ -1,0 +1,36 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+
+  <TemplateData>
+
+    <Name>Ajs Application - Complete Solution</Name>
+    <Description>Solution containing all projects necessary to develop the Web Frontend Application using the Ajs Framework</Description>
+    <ProjectType>TypeScript</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>0</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>AjsWebApplication</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+
+  <TemplateContent>
+
+    <ProjectCollection>
+       <SolutionFolder Name="Solution Items">
+         <ProjectItem ReplaceParameters="false" TargetFileName="LICENSE">LICENSE</ProjectItem>
+         <ProjectItem ReplaceParameters="false" TargetFileName="README.MD">README.MD</ProjectItem>
+       </SolutionFolder>
+       <ProjectTemplateLink ProjectName="AjsWebApp">AjsWebApp\AjsWebApp.vstemplate</ProjectTemplateLink>
+       <ProjectTemplateLink ProjectName="Application">AjsApplication\AjsApp.vstemplate</ProjectTemplateLink>
+       <ProjectTemplateLink ProjectName="Application.Boot">AjsApplicationBoot\AjsApp.Boot.vstemplate</ProjectTemplateLink>
+       <ProjectTemplateLink ProjectName="Application.Lib">AjsApplicationLibrary\AjsApp.Lib.vstemplate</ProjectTemplateLink>
+       <ProjectTemplateLink ProjectName="Ajs">AjsFramework\Ajs.vstemplate</ProjectTemplateLink>
+    </ProjectCollection>
+
+  </TemplateContent>
+
+</VSTemplate>

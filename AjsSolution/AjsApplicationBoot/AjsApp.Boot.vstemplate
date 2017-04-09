@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Ajs Application Boot Configuration</Name>
+    <Description>Configuration of the Ajs Framework and the Application during the boot
+
+Ajs Application solution and Ajs Application project should be created first then Ajs Application Boot Configuration project should be added to it</Description>
+    <ProjectType>TypeScript</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <SortOrder>1</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>AjsApp.Boot</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="AjsApp.Boot.csproj" File="AjsApp.Boot.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="bootconfig.ts">bootconfig.ts</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.json">tsconfig.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.common.json">tsconfig.common.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.Debug.json">tsconfig.Debug.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.Release.json">tsconfig.Release.json</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

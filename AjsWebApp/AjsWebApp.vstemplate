@@ -1,0 +1,53 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Ajs Web Application with Build Tools</Name>
+    <Description>The Ajs Framework Application startup project with post-build tasks</Description>
+    <ProjectType>TypeScript</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>4</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>AjsWebApp</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="AjsWebApp.csproj" File="AjsWebApp.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="package.json">package.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Gulpfile.js">Gulpfile.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AjsWebApp.json">AjsWebApp.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AjsWebApp.Debug.json">AjsWebApp.Debug.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AjsWebApp.Release.json">AjsWebApp.Release.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="web.config">web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="web.Debug.config">web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="web.Release.config">web.Release.config</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="LICENSE">LICENSE</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="README.MD">README.MD</ProjectItem>
+      <Folder Name="js" TargetFolderName="js" />
+      <Folder Name="buildmodules" TargetFolderName="buildmodules">
+        <Folder Name="config" TargetFolderName="config">
+          <ProjectItem ReplaceParameters="false" TargetFileName="index.js">index.js</ProjectItem>
+        </Folder> 
+        <Folder Name="filesystem" TargetFolderName="filesystem">
+          <ProjectItem ReplaceParameters="false" TargetFileName="index.js">index.js</ProjectItem>
+        </Folder> 
+        <Folder Name="offline" TargetFolderName="offline">
+          <ProjectItem ReplaceParameters="false" TargetFileName="index.js">index.js</ProjectItem>
+        </Folder> 
+        <Folder Name="output" TargetFolderName="output">
+          <ProjectItem ReplaceParameters="false" TargetFileName="index.js">index.js</ProjectItem>
+        </Folder> 
+        <Folder Name="visualstudio" TargetFolderName="visualstudio">
+          <ProjectItem ReplaceParameters="false" TargetFileName="index.js">index.js</ProjectItem>
+        </Folder> 
+      </Folder>
+      <Folder Name="buildtools" TargetFolderName="buildtools">
+        <ProjectItem ReplaceParameters="false" TargetFileName="AjsWebAppSchema.json">AjsWebAppSchema.json</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="README.MD">README.MD</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

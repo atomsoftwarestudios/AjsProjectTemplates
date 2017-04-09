@@ -1,0 +1,35 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Ajs Application</Name>
+    <Description>Web Frondend Application with Ajs Framework and TypeScript</Description>
+    <ProjectType>TypeScript</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <SortOrder>2</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>AjsApp</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="AjsApp.csproj" File="AjsApp.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Application.ts">Application.ts</ProjectItem>
+      <Folder Name="Components" TargetFolderName="Components" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="IApplicationConfig.ts">IApplicationConfig.ts</ProjectItem>
+      <Folder Name="Models" TargetFolderName="Models" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.json">tsconfig.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.common.json">tsconfig.common.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.Debug.json">tsconfig.Debug.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.Release.json">tsconfig.Release.json</ProjectItem>
+      <Folder Name="wwwroot" TargetFolderName="wwwroot">
+        <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
+        <Folder Name="templates" TargetFolderName="templates">
+          <ProjectItem ReplaceParameters="true" TargetFileName="default.css">default.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="default.html">default.html</ProjectItem>
+        </Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

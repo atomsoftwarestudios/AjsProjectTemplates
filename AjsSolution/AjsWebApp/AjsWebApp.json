@@ -1,0 +1,23 @@
+{
+
+  "$schema": "./buildtools/AjsWebAppSchema.json#",
+
+  "ignoredProjects": [
+  ],
+
+  "projectIgnore": true,
+
+  "jsSourceFolder": "/bin",
+  "wwwRootSourceFolder": "/wwwroot",
+
+  "targetWebServer": "IIS",
+
+  "sourcesPath": "/src",
+  "jsTargetFolder": "/js",
+  "jsCreateProjectFolder": false,
+
+  "offlineSupport": true,
+  "offlineFiles": []
+
+
+}

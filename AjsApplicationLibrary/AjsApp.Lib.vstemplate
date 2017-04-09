@@ -1,0 +1,30 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Ajs Application Library</Name>
+    <Description>
+      Merge and initialize all 3rd party libraries used by Ajs Application in a single project
+    </Description>
+    <ProjectType>TypeScript</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <SortOrder>3</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>AjsApp.Lib</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="AjsApp.Lib.csproj" File="AjsApp.Lib.csproj" ReplaceParameters="true">
+      <Folder Name="lib" TargetFolderName="lib">
+        <ProjectItem ReplaceParameters="true" TargetFileName="README.MD">README.MD</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="libinit.ts">libinit.ts</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.json">tsconfig.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.common.json">tsconfig.common.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.Debug.json">tsconfig.Debug.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.Release.json">tsconfig.Release.json</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
