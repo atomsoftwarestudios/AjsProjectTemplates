@@ -172,17 +172,17 @@ goto :eof
    set solutionDir=$(SolutionDir)
    set solutionDir=%25solutionDir:\=\\%25
 
-   echo { &gt; %251
-   echo    "solutionName" : "$(SolutionName)", &gt;&gt; %251
-   echo    "solutionPath" : "%25solutionPath%25", &gt;&gt; %251
-   echo    "solutionDir" : "%25solutionDir%25", &gt;&gt; %251
-   echo    "solutionFileName" : "$(SolutionFileName)", &gt;&gt; %251
-   echo    "platformName" : "$(PlatformName)", &gt;&gt; %251
-   echo    "configurationName" : "$(ConfigurationName)", &gt;&gt; %251
-   echo    "ajsWebAppProject" : "$(ProjectName)" &gt;&gt; %251
-   echo } &gt;&gt; %251
+   set toWrite={ 
+   set toWrite=%25toWrite%25"solutionName" : "$(SolutionName)", 
+   set toWrite=%25toWrite%25"solutionPath" : "%25solutionPath%25", 
+   set toWrite=%25toWrite%25"solutionDir" : "%25solutionDir%25", 
+   set toWrite=%25toWrite%25"solutionFileName" : "$(SolutionFileName)", 
+   set toWrite=%25toWrite%25"platformName" : "$(PlatformName)", 
+   set toWrite=%25toWrite%25"configurationName" : "$(ConfigurationName)", 
+   set toWrite=%25toWrite%25"ajsWebAppProject" : "$(ProjectName)" 
+   set toWrite=%25toWrite%25}
+   echo %25toWrite%25 &gt; %251
    goto :eof
-
 
 :gulp
    set command="gulp -b %251 --no-color --gulpfile %252 %253"
