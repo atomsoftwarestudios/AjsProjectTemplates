@@ -1,6 +1,6 @@
 # AjsProjectTemplates
 
-DEPRECATED! Ajs has changed and recommended project structure reworked. Don't use!
+**DEPRECATED! Ajs has changed and recommended project structure reworked. Don't use!**
 
 To use these VS templates copy required projects to:
 
